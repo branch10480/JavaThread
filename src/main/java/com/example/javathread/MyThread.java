@@ -7,6 +7,7 @@ public class MyThread extends Thread {
         this.data = data;
     }
 
+    // タスクをスレッドクラス自体に直接記述する形式
     // runメソッドでは引数を取れないのでフィールドを用意してコンストラクタで設定する
     @Override
     public void run() {
