@@ -15,8 +15,10 @@ public class Entry1 implements ApplicationRunner {
 
         // Thread を表すクラスを作成する
         MyThread thread1 = new MyThread(3);
+        MyThread thread2 = new MyThread(10);
         System.out.println("[main] start");
         thread1.start();
+        thread2.start();
         System.out.println("[main] end");
     }
 }
