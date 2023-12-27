@@ -13,8 +13,11 @@ public class Entry1 implements ApplicationRunner {
         System.out.println("This is Entry1.");
         System.out.println("--------------------");
 
-        for (String arg : args.getSourceArgs()) {
-            System.out.println(arg);
-        }
+        // Thread を表すクラスを作成する
+        MyThread thread1 = new MyThread(3);
+        System.out.println("[main] start");
+        thread1.start();
+        System.out.println("[main] end");
     }
 }
+
