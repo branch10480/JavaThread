@@ -19,3 +19,4 @@ public class MyThread extends Thread {
         System.out.println("[MyThread] end => total = " + total);
     }
 }
+
